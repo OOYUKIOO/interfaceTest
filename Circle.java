@@ -1,4 +1,4 @@
-public class Circle extends Shape{
+public class Circle extends Shape implements Areable{
 
     private double radius;
 
@@ -9,6 +9,10 @@ public class Circle extends Shape{
 
     public double getRadius(){
 	return radius;
+    }
+
+    public double getArea(){
+	return Math.pow(getRadius(),2)*Math.PI;
     }
 
     public String toString(){
