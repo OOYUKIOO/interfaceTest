@@ -1,14 +1,18 @@
-public class Cylinder extends Circle{
+public class Cylinder extends Circle implements Volumeable{
 
     private double height;
 
-    private Cylinder(double radius, double height, String name){
+    public Cylinder(double radius, double height, String name){
 	super(radius, name);
 	this.height = height;
     }
 
     public double getHeight(){
 	return height;
+    }
+
+    public double getVolume(){
+	return Math.PI * getHeight() * Math.pow(getRadius(),2);
     }
 
     public String toString(){

@@ -4,8 +4,8 @@ public class Driver{
 	return (char)('A'+(int)(Math.random()*26));
     }
 
-    /*//UNCOMMENT THIS WHEN YOU DO Area
-      public static Area makeRandomAreaShape(){
+    //UNCOMMENT THIS WHEN YOU DO Area
+      public static Areable makeRandomAreaShape(){
       String name = ""+letter()+"-2d";
       double value =Math.round(Math.random()*10.0);
       if(Math.random() < 0.5){
@@ -15,10 +15,10 @@ public class Driver{
       return new Rectangle(value,value2,name);
       }
       }
-      /*
+    
 
-      /* //UNCOMMENT THIS WHEN YOU DO Volume
-      public static Volume makeRandomVolumeShape(){
+       //UNCOMMENT THIS WHEN YOU DO Volume
+      public static Volumeable makeRandomVolumeShape(){
       String name = ""+letter()+"-3d";
       double value = Math.round(Math.random()*10.0);
       double choice = Math.random();
@@ -34,33 +34,33 @@ public class Driver{
       }
       }
       }
-    */
+    
 
     public static void main(String[]args){
 	
-	/*//UNCOMMENT THIS WHEN YOU DO AREA
-	    Area[] twos = new Area[5];
-	      for(int i = 0; i < twos.length; i++){
-	        twos[i]=makeRandomAreaShape();
-		  }
-		    System.out.println("Area tests:");
-		      for(Area a : twos){
-		        System.out.println(a);
-			  System.out.println(a.getArea());
-			    }
-	*/
+	//UNCOMMENT THIS WHEN YOU DO AREA
+	Areable[] twos = new Areable[5];
+	for(int i = 0; i < twos.length; i++){
+	    twos[i]=makeRandomAreaShape();
+	}
+	System.out.println("Area tests:");
+	for(Areable a : twos){
+	    System.out.println(a);
+	    System.out.println(a.getArea());
+	}
+	
 
-	/*//UNCOMMENT THIS WHEN YOU DO VOLUME
-	    Volume[] threes = new Volume[6];
-	      for(int i = 0; i < threes.length; i++){
-	        threes[i]=makeRandomVolumeShape();
-		  }
-		    System.out.println("\nVolume tests:");
-		      for(Volume v : threes){
-		        System.out.println(v);
-			  System.out.println(v.getVolume());
-			    }
-	*/
+	//UNCOMMENT THIS WHEN YOU DO VOLUME
+	Volumeable[] threes = new Volumeable[6];
+	for(int i = 0; i < threes.length; i++){
+	    threes[i]=makeRandomVolumeShape();
+	}
+	System.out.println("\nVolume tests:");
+	for(Volumeable v : threes){
+	    System.out.println(v);
+	    System.out.println(v.getVolume());
+	}
+	
     }
 }
 
